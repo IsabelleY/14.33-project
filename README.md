@@ -11,4 +11,4 @@ In the table titled "Test Score Estimations: Means and Achievement Gaps", find t
 
 Scroll to the right-most side of the table and download "seda_county_long_CS_v30" in either Stata or Excel format
 
-Save the data file in the same folder as the do-files (edit the directory at the beginning of the do-files to your own directory)
+Save the data file in the same folder as the do-files (edit the directory at the beginning of the do-files to the folder where the do-files and data are saved)
