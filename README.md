@@ -9,4 +9,4 @@ Go to part 2 of the page, "Test Score Estimates: Means, Standard Deviations, and
 
 In the table titled "Test Score Estimations: Means and Achievement Gaps", find the file named "seda_county_long_CS_v30"
 
-Scroll to the right-most side of the table and download "seda_county_long_CS_v30" in either Stata or Excel format
+Scroll to the right-most side of the table and download "seda_county_long_CS_v30" in either Stata or Excel format. Save the file in the same folder as the do files
