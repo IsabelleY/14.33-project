@@ -1,5 +1,3 @@
-*ssc install eventdd
-
 clear
 eststo clear
 
@@ -68,6 +66,6 @@ graph export effects_ela.pdf, replace
 
 collapse (mean) mn_wbg mn_wht mn_blk (rawsum) totgyb_all [aweight = totgyb_all], by (grade year treatment)
 keep if grade == 5
-graph twoway (line mn_blk mn_wht year if treatment == 0) (line mn_blk mn_wht year if treatment == 1), ytitle("Grade Cohort Standardized score") xtitle("Spring of tested year")///
+graph twoway (line mn_blk mn_wht year if treatment == 0) (line mn_blk mn_wht year if treatment == 1), ytitle("Grade Cohort Standardized score") xtitle("Spring of tested year") ///
 	legend(label(1 mean score, Black students, treatment) label(2 mean score, white students, treatment)  label(3 mean score, Black students control) label(4 mean score, white students, control))
 graph export trendlines_ela.pdf, replace
