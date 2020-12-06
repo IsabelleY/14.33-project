@@ -1,5 +1,3 @@
-*ssc install eventdd
-
 clear
 eststo clear
 
