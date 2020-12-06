@@ -61,7 +61,7 @@ esttab using "esttab_wbg_ela.tex", se indicate("state fixed effects = *.state" "
 	legend label nonumber
 	
 //generating graph to show estimated treatment effects
-coefplot (all, label(All grades)) (g3, label(Grade 3)) (g4, label(Grade 4)) (g5, label(Grade 5)) (g6, label(Grade 6)) (g7, label(Grade 7)) (g8, label(Grade 8)), keep(post) xline(0) xtitle("Estimated effect of Common Core on gap in math, by grade")
+coefplot (all, label(All grades)) (g3, label(Grade 3)) (g4, label(Grade 4)) (g5, label(Grade 5)) (g6, label(Grade 6)) (g7, label(Grade 7)) (g8, label(Grade 8)), keep(post) xline(0) xtitle("Estimated effect of Common Core on gap in ELA, by grade")
 graph export effects_ela.pdf, replace
 
 collapse (mean) mn_wbg mn_wht mn_blk (rawsum) totgyb_all [aweight = totgyb_all], by (grade year treatment)
