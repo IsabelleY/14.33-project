@@ -52,7 +52,7 @@ eststo g8: reg mn_wbg post i.state i.year if grade == 8, r cluster(stateabb)
 //printing table of results
 esttab using "esttab_wbg_math.tex", se indicate("state fixed effects = *.state" "time fixed effects = *.year" "grade fixed effects = *.grade") ///
 	style(tex) eqlabels(none) collabels(, none) mlabels(none) ///
-	stats(N r2, labels("N" "R-squared") fmt(0 2)) starlevels( * 0.10 ** 0.05 *** 0.010) replace ///
+	stats(N r2, labels("N" "R-squared") fmt(%9.2fc)) starlevels( * 0.10 ** 0.05 *** 0.010) replace ///
 	prehead("\begin{threeparttable} \begin{tabular}{lccccccc}" \hline) ///
 	posthead("& All grades & Grade 3 & Grade 4 & Grade 5 & Grade 6 & Grade 7 & Grade 8\\ \hline") ///
 	postfoot("\hline \end{tabular} \begin{tablenotes} \item Notes: Standard errors (in parentheses) are clustered at the state level and robust to heterskedasticity. Significance at the 1, 5, and 10 percent levels indicated by ***, **, and *, respectively \end{tablenotes} \end{threeparttable}") ///
